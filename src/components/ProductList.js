@@ -25,20 +25,21 @@ const ProductList = () => {
        const handleFilterChange = (filters) => {
               let filtered = products;
 
-              if (filters.material) {
+              if (filters.materials) {
                      filtered = filtered.filter((product) =>
-                            product.name.includes(filters.material)
+                            product.selectedMaterial === filters.materials
                      );
               }
 
-              if (filters.grade) {
+              if (filters.grades) {
                      filtered = filtered.filter((product) =>
-                            product.name.includes(filters.grade)
+                            product.selectedGrade === filters.grades
                      );
               }
 
               setFilteredProducts(filtered);
        };
+
 
        const handleSelectProduct = (productId) => {
               setSelectedProducts((prevSelected) =>
@@ -71,10 +72,10 @@ const ProductList = () => {
 
        const handleSaveProduct = (product) => {
               const updatedProducts = editingProduct
-                     ? products.map((p) => (p.id === product.id ? product : p)) // Update existing product
-                     : [...products, product]; // Add new product
+                     ? products.map((p) => (p.id === product.id ? product : p))
+                     : [...products, product];
 
-              dispatch(fetchProductsSuccess(updatedProducts)); // Dispatch the updated products list to Redux store
+              dispatch(fetchProductsSuccess(updatedProducts));
               setIsModalOpen(false);
               setEditingProduct(null);
        };

@@ -1,15 +1,14 @@
 export const mockProducts = [
-       { id: 1, name: 'Stainless Steel 304 Pipe', detail: 'High-quality stainless steel pipe for industrial use', price: 120 },
-       { id: 2, name: 'Carbon Steel A105 Tubing', detail: 'Durable carbon steel tubing for heavy-duty applications', price: 90 },
-       { id: 3, name: 'Aluminum Alloy 6061 Sheet', detail: 'Lightweight and corrosion-resistant aluminum alloy sheet', price: 150 },
-       { id: 4, name: 'Copper C12200 Tube', detail: 'High-purity copper tube for plumbing and HVAC systems', price: 200 },
-       { id: 5, name: 'Titanium Gr2 Plate', detail: 'Corrosion-resistant titanium plate for aerospace applications', price: 300 },
-       { id: 6, name: 'Brass C36000 Rod', detail: 'Highly machinable brass rod for electrical and mechanical components', price: 80 },
-       { id: 7, name: 'Nickel Alloy 625 Pipe', detail: 'High-temperature resistant nickel alloy pipe', price: 400 },
-       { id: 8, name: 'Galvanized Steel Coil', detail: 'Zinc-coated galvanized steel coil for rust resistance', price: 70 },
-       { id: 9, name: 'Duplex 2205 Sheet', detail: 'Duplex stainless steel with high strength and corrosion resistance', price: 250 },
-       { id: 10, name: 'Inconel 718 Bar', detail: 'Nickel-chromium alloy bar for high-temperature environments', price: 450 },
-       { id: 11, name: 'PVC-U Pipe', detail: 'Unplasticized PVC pipe for plumbing and drainage', price: 20 },
+       { id: 1, name: 'Stainless Steel 304 Pipe', detail: 'High-quality stainless steel pipe', price: 120, selectedMaterial: 'Stainless Steel', selectedGrade: '304' },
+       { id: 2, name: 'Carbon Steel A105 Tubing', detail: 'Durable carbon steel tubing', price: 90, selectedMaterial: 'Carbon Steel', selectedGrade: 'A105' },
+       { id: 3, name: 'Aluminum 6061 Sheet', detail: 'Lightweight, corrosion-resistant aluminum sheet', price: 75, selectedMaterial: 'Aluminum', selectedGrade: '6061' },
+       { id: 4, name: 'Brass C360 Rod', detail: 'Precision brass rod for machining', price: 110, selectedMaterial: 'Brass', selectedGrade: 'C360' },
+       { id: 5, name: 'Copper C110 Plate', detail: 'High-conductivity copper plate', price: 140, selectedMaterial: 'Copper', selectedGrade: 'C110' },
+       { id: 6, name: 'Titanium Grade 5 Bolt', detail: 'Aerospace-grade titanium bolt for high strength', price: 200, selectedMaterial: 'Titanium', selectedGrade: 'Grade 5' },
+       { id: 7, name: 'Stainless Steel 316 Wire', detail: 'Corrosion-resistant stainless steel wire', price: 95, selectedMaterial: 'Stainless Steel', selectedGrade: '316' },
+       { id: 8, name: 'Carbon Steel A106 Pipe', detail: 'Seamless carbon steel pipe for high-pressure applications', price: 85, selectedMaterial: 'Carbon Steel', selectedGrade: 'A106' },
+       { id: 9, name: 'Aluminum 7075 Bar', detail: 'High-strength aluminum bar used in aerospace applications', price: 130, selectedMaterial: 'Aluminum', selectedGrade: '7075' },
+       { id: 10, name: 'Brass C260 Sheet', detail: 'Flexible brass sheet for stamping and forming', price: 100, selectedMaterial: 'Brass', selectedGrade: 'C260' }
 ];
 
 export const mockMaterials = [
